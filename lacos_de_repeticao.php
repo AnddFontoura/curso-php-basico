@@ -38,20 +38,25 @@
     $i = 0;
     while ($i < count($latamCountry)) {
         echo $latamCountry[$i] . '<br>';
-        $i++;
+        $i++; // $i = $i + 1 || $i += 1
     }
 
     echo "<h1> Exemplo com 'foreach' </h1>";
 
-    foreach($latamCountry as $country){
+    foreach($latamCountry as $country) {
         echo $country . '<br>';
     }
 
     echo "<h1> Exemplo com 'for' </h1>";
 
-    for($i = 0; $i < count($latamCountry); $i++) {
-        echo $latamCountry[$i] . '<br>';
+    for($i = 1; $i < 20; $i += 2) {
+        //$latamCountry[] = $i;
+        array_push($latamCountry, $i);
     }
+
+    echo "<pre>";
+    var_dump($latamCountry);
+    echo "</pre>";
 
     /**
      * Tá, se todos os laços produzem o mesmo efeito, quando utilizar um ou outro?

@@ -20,10 +20,10 @@
 
     $varString = '200';
     $varInt = 200;
-    $varFloat = 20.0;
+    $varFloat = 20.1;
     $varBooleanNum = 0;
     $varBooleanString = false;
-    
+
     /**
      * No PHP temos funções para determinar qual o tipo de uma variável, geralmente são invocadas
      * por 'is_' e o tipo da variavel.
@@ -44,9 +44,9 @@
     }
 
     if (is_string($varFloat)) {
-        echo 'É string <br>';
+        echo 'É float <br>';
     } else { 
-        echo 'Não é string <br>'; 
+        echo 'Não é float <br>'; 
     }
 
     /**
