@@ -1,25 +1,14 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso PHP básico</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-</head>
+<?php 
+    $title = "Home";
+        
+    require('include/header.php'); 
+    
+?>
 
 <body>
-    <div class="container">
-        <div class="nav-scroller py-1 mb-2">
-            <nav class="nav d-flex justify-content-between">
-                <a class="p-2 link-secondary" href="index.php">Home</a>
-                <a class="p-2 link-secondary" href="about_us.php">About us</a>
-                <a class="p-2 link-secondary" href="services.php">Technology</a>
-                <a class="p-2 link-secondary" href="contact.php">Contact</a>
-            </nav>
-        </div>
-    </div>
+   <?php
+        require('include/menu.php'); ?>
+    
 
     <main class="container">
         <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
@@ -183,16 +172,7 @@
         </div>
 
     </main>
-
-    <footer class="container">
-        <hr>
-        <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-        <p>
-            <a href="#">Back to top</a>
-        </p>
-    </footer>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-</body>
-
-</html>
+<?php
+require('include/footer.php');
+?>
+    
